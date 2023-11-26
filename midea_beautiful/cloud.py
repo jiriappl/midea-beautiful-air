@@ -359,7 +359,7 @@ class MideaCloud:
         """
         response = self.api_request(
             "/v1/user/login/id/get",
-            {"loginAccount": self._account},
+            {"loginAccount": self._account, "deviceId": "111"},
             authenticate=False,
         )
         self._login_id: str = response["loginId"]
@@ -420,6 +420,7 @@ class MideaCloud:
                     "appKey": self._appkey,
                     "appVersion": _PROXIED_APP_VERSION,
                     "osVersion": _PROXIED_SYS_VERSION,
+                    "deviceId": "111",
                     "platform": "2",
                 },
                 "iotData": {

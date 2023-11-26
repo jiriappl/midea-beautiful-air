@@ -20,7 +20,7 @@ with open("README.md", "r", encoding="utf-8") as readme:
 setup(
     name="midea-beautiful-air",
     version=get_version("midea_beautiful/version.py"),
-    url="https://github.com/nbogojevic/midea-beautiful-air",
+    url="https://github.com/jiriappl/midea-beautiful-air",
     author="Nenad Bogojević",
     author_email="nenad.bogojevic@gmail.com",
     license="MIT",
